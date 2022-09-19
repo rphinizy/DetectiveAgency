@@ -7,7 +7,13 @@ body{
 
 form input {
     color: black;
-    /* AHA! Found it! This guy makes the form look much better.*/
+    /**/
+    /**/
+    /* AHA! Found it! float right makes the form look much better.
+        I would really like to know how you made your error messages INLINE. A table was the only
+        way I could get the messages to display to the right of the input field. 
+    */
+    /**/
     float: right;
     margin-right: 15%;
 }
