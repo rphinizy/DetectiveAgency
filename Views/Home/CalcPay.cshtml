@@ -1,0 +1,56 @@
+﻿@model DetectiveAgency.Models.Employee
+
+<div class="row">
+    <h1 class="col-md-12">New Employee Form</h1>
+    <form asp-action="CalcPay" method="post" class="col-lg-6">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <table>
+        <tr>
+            <th>
+                <label asp-for="ID">ID:</label>
+                <input asp-for="ID"> </>
+            </th>
+            <th>
+                 @Html.ValidationMessageFor(x=>x.ID)
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="Name">Name:</label>
+                <input asp-for="Name" />
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="Hours">Hours:</label>
+                <input asp-for="Hours" />
+            </th>
+             <th>
+                 @Html.ValidationMessageFor(x=>x.Hours)
+            </th>
+            
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="Rate">Rate:</label>
+                <input asp-for="Rate" />
+             </th>
+             <th>
+                @Html.ValidationMessageFor(x=>x.Rate)
+             </th>
+         </tr>
+
+        <tr>
+            <th>
+                <label>Weekly Gross Pay:</label>
+                <input value="@ViewBag.Salary.ToString("C2")" readonly>
+            </th>
+        </tr>
+        </table>
+        <br/>
+        <button type="submit">Calculate Gross Pay</button>
+        <button asp-controller="Home" asp-action="Index">Clear</button>
+    </form>
+    @Html.ValidationSummary(true)
+
+</div>
