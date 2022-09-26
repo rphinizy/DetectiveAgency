@@ -1,6 +1,6 @@
 ﻿@model DetectiveAgency.Models.Employee
-
-<div class="row">
+<br />
+<div class="row card bg-secondary">
     <h1 class="col-md-12">New Employee Form</h1>
     <form asp-action="CalcPay" method="post" class="col-lg-6">
         <div asp-validation-summary="All" class="text-danger"></div>
@@ -48,8 +48,10 @@
         </tr>
         </table>
         <br/>
-        <button type="submit">Calculate Gross Pay</button>
-        <button asp-controller="Home" asp-action="Index">Clear</button>
+        <div class="card-footer">
+            <button type="submit">Calculate Gross Pay</button>
+            <button asp-controller="Home" asp-action="Index">Clear</button>
+        </div>
     </form>
     @Html.ValidationSummary(true)
 

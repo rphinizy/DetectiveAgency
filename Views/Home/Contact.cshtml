@@ -1,20 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Contact Us!";
 }
-<img src="~/Images/spying.jpg" alt="telescope on deck"
-     style="width:25%;outline:5px black solid; outline-offset:10px;float:right;margin-top:2%;" />
-<h2>XYZ Detective Agency</h2>
-<h3>Headquarters</h3>
-<address>
-    One Sleuthton Ave<br />
-    Traverse City, MI 49696<br />
-    <abbr title="Phone">P:</abbr>
-    800.555.1111
-</address>
+<div class="row">
+    <div class="col-sm-8">
+        <h2>XYZ Detective Agency</h2>
+          <div class=row>
+            <i class="material-icons col-sm-1" style="font-size:48px;color:orange">contact_phone</i>
+            <i class="material-icons col-sm-1" style="font-size:48px;color:orange">email</i>
+            <i class="material-icons col-sm-1" style="font-size:48px;color:orange">comment</i>
+         </div>
+        <h3>Headquarters</h3>
+        <address>
+            One Sleuthton Ave<br />
+            Traverse City, MI 49696<br />
+            <abbr title="Phone"></abbr>
+            800.555.1111
+        </address>
+    </div>
+    <img src="~/Images/spying.jpg" alt="telescope on deck" class="rounded-circle col-sm-4" />
 
-<address>
-    <strong>United States:</strong>   <a href="mailto:us@xyzdetectives.org">us@xyzdetectives.org</a><br />
-    <strong>Europe:</strong>   <a href="mailto:europe@xyzdetectives.org">europe@xyzdetectives.org</a><br />
-    <strong>Africa:</strong> <a href="mailto:africa@xyzdetectives.org">africa@xyzdetectives.org</a><br />
-    <strong>Austrailia:</strong> <a href="mailto:austrailia@xyzdetectives.org">australia@xyzdetectives.org</a><br />
-</address>
+    <div class="col-sm-12 mt-5 list-group list-group-horizontal">
+        <a href="mailto:us@xyzdetectives.org" class="list-group-item list-group-item-action list-group-item-warning">United States:<br /> us@xyzdetectives.org</a>
+        <a href="mailto:europe@xyzdetectives.org" class="list-group-item list-group-item-action list-group-item-warning">Europe:<br /> europe@xyzdetectives.org</a>
+        <a href="mailto:africa@xyzdetectives.org" class="list-group-item list-group-item-action list-group-item-warning">Africa:<br /> africa@xyzdetectives.org</a>
+        <a href="mailto:austrailia@xyzdetectives.org" class="list-group-item list-group-item-action list-group-item-warning">Austrailia:<br /> australia@xyzdetectives.org</a>
+    </div>
+</div>
